@@ -348,7 +348,7 @@ element.
 
         if (Array.isArray(value)) {
           for (var i = 0; i < value.length; i++) {
-            queryParts.push(param + '=' + window.encodeURIComponent(value[i]));
+            queryParts.push(param + '[]=' + window.encodeURIComponent(value[i]));
           }
         } else if (value !== null) {
           queryParts.push(param + '=' + window.encodeURIComponent(value));
